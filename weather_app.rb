@@ -21,7 +21,7 @@ while (day_increment < 5)
 	
 	if (today_int == forecast_int)
 			forecast_day = "Today's forecast"; next_day = day_increment+1
-		elsif (next_day == day_increment) # Did something ugly above because i was stumped on how to compare a day ahead with the range of 0..6
+		elsif (next_day == day_increment)
 			forecast_day = "Tomorrow's forecast"
 		else forecast_day = forecast_data.fetch("day")
 	end
